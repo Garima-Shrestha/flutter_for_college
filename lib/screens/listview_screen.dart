@@ -224,22 +224,25 @@ class _ListViewScreenState extends State<ListViewScreen> {
                 style: TextStyle(fontSize: 16, color: Colors.grey),
                 textAlign: TextAlign.center,
               )
-                  : ListView.builder(
-                    itemCount: lstStudent.length,
-                    shrinkWrap: true,
-                    itemBuilder: (context, index) {
-                      final student = lstStudent[index];
-                      return ListTile(
-                        leading: CircleAvatar(
-                          // child: Text(student.fname[0]),        // to get the first letter of name
-                          child: const Icon(Icons.person),         // person ko logo aaunxa
-                        ),
-                        title: Text('${student.fname} ${student.lname}'),
-                        subtitle: Text(student.city),
-                        trailing: const Icon(Icons.more_vert),      // 3 dots ko lagi
-                        onTap: (){},
-                      );
-                    },
+                  : SizedBox(
+                    height: 400,
+                    child: ListView.builder(
+                      itemCount: lstStudent.length,
+                      shrinkWrap: true,
+                      itemBuilder: (context, index) {
+                        final student = lstStudent[index];
+                        return ListTile(
+                          leading: CircleAvatar(
+                            // child: Text(student.fname[0]),        // to get the first letter of name
+                            child: const Icon(Icons.person),         // person ko logo aaunxa
+                          ),
+                          title: Text('${student.fname} ${student.lname}'),
+                          subtitle: Text(student.city),
+                          trailing: const Icon(Icons.more_vert),      // 3 dots ko lagi
+                          onTap: (){},
+                        );
+                      },
+                    ),
                   ),
             ],
           ),
