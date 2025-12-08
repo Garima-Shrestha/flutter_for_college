@@ -16,10 +16,10 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      // home: const DashboardScreen(),
+      home: const DashboardScreen(),
       // home: const EmployeeScreen(),
       // home: const DatatableScreen(),
-      home: const AlertdialogScreen(),
+      // home: const AlertdialogScreen(),
     );
   }
 }
