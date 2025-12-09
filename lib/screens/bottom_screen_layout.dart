@@ -27,7 +27,7 @@ class _BottomScreenLayoutState extends State<BottomScreenLayout> {
       appBar: AppBar(title: Text("Bottom Screen Layout")),
       body: lstBottomScreen[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
+        type: BottomNavigationBarType.fixed,   // to keep more than 3 items in the bottom navigation
           items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
