@@ -4,6 +4,7 @@ import 'package:flutterfor_college/screens/bottom_screen_layout.dart';
 import 'package:flutterfor_college/screens/dashboard_screen.dart';
 import 'package:flutterfor_college/screens/datatable_screen.dart';
 import 'package:flutterfor_college/screens/employee_screen.dart';
+import 'package:flutterfor_college/theme/theme_data.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -13,15 +14,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Apps for College',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      // home: const DashboardScreen(),
+      theme: getApplicationTheme(),
+      home: const DashboardScreen(),
       // home: const EmployeeScreen(),
       // home: const DatatableScreen(),
       // home: const AlertdialogScreen(),
-      home: const BottomScreenLayout(),
+      // home: const BottomScreenLayout(),
     );
   }
 }
