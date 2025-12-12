@@ -186,6 +186,21 @@ class _ListViewScreenState extends State<ListViewScreen> {
                       ),
                     ),
                   ),
+
+                  const SizedBox(width: 15),
+                  Expanded(
+                    child: ElevatedButton.icon(
+                      onPressed: () {},
+                      icon: const Icon(Icons.visibility),
+                      label: const Text('View Students'),
+                      style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(vertical: 15),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
               const SizedBox(height: 40),
