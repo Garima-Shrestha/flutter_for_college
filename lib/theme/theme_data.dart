@@ -18,6 +18,36 @@ ThemeData getApplicationTheme(){
           borderRadius: BorderRadius.circular(5),
         )
       )
-    )
+    ),
+
+      // input decoration theme
+      inputDecorationTheme: InputDecorationTheme(
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),
+        ),
+        filled: true,
+        fillColor: Colors.grey[100],
+      ),
+
+    // scaffoldBackgroundColor: Colors.blue,
+
+      // appbar theme
+    appBarTheme: AppBarTheme(
+        color: Colors.blue,
+      elevation: 4,
+      titleTextStyle: TextStyle(
+        color: Colors.white,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+      ),
+    ),
+
+
+    // bottomnavigation Theme
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        backgroundColor: Colors.white,
+        selectedItemColor: Colors.blue,
+        unselectedItemColor: Colors.grey,
+      )
   );
 }
